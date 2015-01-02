@@ -4,10 +4,10 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Проба пера</title>
         <style>
-            DIV h1 {color: red; } 
-            H1 {font-family: Arial, serif;
+            div h1 {color: red; }  /* Контекстный селектор */
+            h1 {font-family: Arial, serif;
                 font-style: italic;
-                font-size: 14;}  
+                font-size: 140%;}  
             .border { 
                 padding: 10px; /* Поля вокруг текста */
                 border-right: 10px ;  /*Параметры рамки */
@@ -16,13 +16,18 @@
                 padding-left:10px;
                 margin: 30px;
             }
+            p + i {color: green; font-size: 100%;} /* Соседний селектор */
+            p b {
+                color: blueviolet; 
+                font-size: 140%;} /* Контекстный селектор */
+            i > b {color: hotpink; } /* Дочерний селектор */
         </style>
-    </head>
+    </head> 
     <body>
         <div> <h1>Соседние селекторы</h1></div>
 
-        <p>Для управления стилем соседних элементов используется символ плюса (+), 
-            который устанавливается между двумя селекторами. Общий синтаксис следующий.</p>
+        <p>Для управления стилем <i><b>соседних</b> элементов</i> используется символ плюса (+), 
+            который устанавливается между двумя селекторами. <br></br> <b>Общий синтаксис следующий.</b></p>
         <div class="border">
             Селектор 1 + Селектор 2 { Описание правил стиля }
         </div>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Проба пера</title>
+        <style>
+            p b { color: blue; }
+            i b { color: red; }
+            b i { 
+                color: purple; 
+                font-size: 120%;
+            }
+            p i { color: orange; }
+            div.border { 
+                padding: 20px; /* Поля вокруг текста */
+                border-right: 22px ;  /*Параметры рамки */
+                background: lightcyan; /* Цвет фона */
+                width: 30%;
+                padding-left:50px
+            } 
+            h2 {
+                font-family: Times, serif;
+                font-style: italic; 
+                font-size: 250%;
+                color: purple
+            } 
+
+        </style>
+    </head>
+    <body>
+        <h2> Контекстные селекторы </h2>
+
+        <p> Разберем разницу между применением <i>контекстных и <b>дочерних</b> селекторов</i>. </p> 
+        <p> Не обязательно <b> <i>контекстные селекторы </i> </b> содержат только один вложенный тег. 
+            В зависимости от ситуации допустимо применять два и более последовательно вложенных друг в друга тегов. </p>
+        <div> <b><i>Синтаксис применения таких селекторов следующий</i></b>. </div>
+
+        <div class="border">
+            Селектор 1  Селектор 2 { Описание правил стиля }
+        </div>
+
+    </body>
+</html>
