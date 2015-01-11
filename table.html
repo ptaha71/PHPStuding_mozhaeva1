@@ -12,13 +12,23 @@
             } 
             table {font-size: 120%;}
             caption {font-size: 100%; color: blue;}
+            table.group2 {
+                width: 100%; /* Ширина таблицы */
+                border: 1px solid #666; /* Рамка вокруг таблицы */
+            }
+            tr.light {
+                background: lightgray; /* Цвет фона */
+            }
+            tr.dark {
+                background: lightslategrey; /* Цвет фона */
+            }
         </style>
     </head>
     <body>
         <h2> Рисуем таблицу </h2>
         <p>
         <table border="2" cellpadding="7">
-            <caption><b>Таблица сравнительной характеристики</b></caption>
+            <caption><b>Группа 1</b></caption>
             <tr>
                 <th></th>
                 <th>Волосы</th>
@@ -26,9 +36,34 @@
                 <th>Рост</th>
                 <th>Пол</th>
             </tr>
-            <tr><td><b>Иван</b></td><td>Светлые</td><td>Голубые</td><td>165</td><td>М</td></tr>
-            <tr><td><b>Ольга</b></td><td>Каштановые</td><td>Карие</td><td>150</td><td>Ж</td></tr>
-            <tr><td><b>Анна</b></td><td>Темные</td><td>Зеленые</td><td>135</td><td>Ж</td></tr>
+            <tr>
+                <td><b>Иван</b></td><td>Светлые</td><td>Голубые</td><td>165</td><td>М</td>
+            </tr>
+            <tr>
+                <td><b>Ольга</b></td><td>Каштановые</td><td>Карие</td><td>150</td><td>Ж</td>
+            </tr>
+            <tr>
+                <td><b>Анна</b></td><td>Темные</td><td>Зеленые</td><td>135</td><td>Ж</td>
+            </tr>
         </table>
-  </body>
+        <table class="group2">
+            <caption><b>Группа 2</b></caption>
+            <tr class="dark">
+                <th></th>
+                <th>Волосы</th>
+                <th>Глаза</th>
+                <th>Рост</th>
+                <th>Пол</th>
+            </tr>
+            <tr class="light">
+                <td><b>Святослав</b></td><td>Русые</td><td>Карие</td><td>185</td><td>М</td>
+            </tr>
+            <tr class="dark">
+                <td><b>Евгения</b></td><td>Рыжие</td><td>Зеленые</td><td>168</td><td>Ж</td>
+            </tr>
+            <tr class="light">
+                <td><b>Ярослав</b></td><td>Темные</td><td>Карие</td><td>172</td><td>М</td>
+            </tr>
+        </table>        
+    </body>
 </html>
